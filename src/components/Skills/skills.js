@@ -12,7 +12,7 @@ const Skills = () => {
             <span className="skillDesc">I am passionate in learning and exposing my creativity thought creating interactive GUI and web designs. I am proficient in HTML, CSS, and Javascript.</span>
             <div className="skillBars">
                 <div className="skillBar">
-                    <img src={GUIDesign} alt="GUI" className="skillBarImg" style={{width:'20px', height:'auto'}} />
+                    <img src={GUIDesign} alt="GUI" className="skillBarImg" style={{width:'200px', height:'auto'}} />
                     <div className="skillBarText">
                         <h2>GUI Design</h2>
                         <p>I am able create graphic user interface - GUI using advanced C# language.</p>
@@ -20,7 +20,7 @@ const Skills = () => {
                 </div>
 
                 <div className="skillBar">
-                    <img src={WebDesign} alt="WebDesign" className="skillBarImg" />
+                    <img src={WebDesign} alt="WebDesign" className="skillBarImg" style={{width:'180px', height:'auto'}} />
                     <div className="skillBarText">
                         <h2>Wesite Design</h2>
                         <p>I can use: HTML, CSS, Javascript, and other frameworks to build websites.</p>
@@ -28,7 +28,7 @@ const Skills = () => {
                 </div>
 
                 <div className="skillBar">
-                    <img src={AppDesign} alt="AppDesign" className="skillBarImg" />
+                    <img src={AppDesign} alt="AppDesign" className="skillBarImg" style={{width:'160px', height:'auto'}} />
                     <div className="skillBarText">
                         <h2>Desktop App Design</h2>
                         <p>I am skilled in formuted a desktop web form with the use of advanced C#, intermidiate level of mySQL, and LINQ Query. </p>

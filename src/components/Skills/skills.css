@@ -30,3 +30,7 @@
     max-width: 80%;
     text-align: left;
 }
+
+.skillBar {
+    display: flex;
+}
