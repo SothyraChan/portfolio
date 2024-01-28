@@ -3,6 +3,7 @@ import './skills.css';
 import GUIDesign from '../../assets/gui.png';
 import WebDesign from '../../assets/webdesign.png';
 import AppDesign from '../../assets/DesktopIcon.png';
+// import { defaults } from 'lite-server';
 
 const Skills = () => {
     return (
@@ -37,3 +38,5 @@ const Skills = () => {
          </section>
     );
 }
+
+export default Skills;
