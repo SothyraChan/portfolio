@@ -12,7 +12,8 @@ const Skills = () => {
             <span className="skillDesc">I am passionate in learning and exposing my creativity thought creating interactive GUI and web designs. I am proficient in HTML, CSS, and Javascript.</span>
             <div className="skillBars">
                 <div className="skillBar">
-                    <img src={GUIDesign} alt="GUI" className="skillBarImg" style={{width:'200px', height:'auto'}} />
+                    <img src={GUIDesign} alt="GUI" className="skillBarImg" />
+                    {/* <img src={AppDesign} alt="AppDesign" className="skillBarImg" style:{{width: '100px', hieght: 'auto'}} />  */}
                     <div className="skillBarText">
                         <h2>GUI Design</h2>
                         <p>I am able create graphic user interface - GUI using advanced C# language.</p>
