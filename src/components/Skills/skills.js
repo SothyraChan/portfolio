@@ -32,12 +32,13 @@ const Skills = () => {
                     <img src={AppDesign} alt="AppDesign" className="skillBarImg" />
                     <div className="skillBarText">
                         <h2>Desktop App Design</h2>
-                        <p>I am skilled in formuted a desktop web form with the use of advanced C#, intermidiate level of mySQL, and LINQ Query. </p>
+                        <p>I am skilled in constructing a desktop web form with the use of advanced C#, intermidiate level of mySQL, and LINQ Query. </p>
                     </div>
                 </div>
-            </div>
-            <div className="resume">
-                <a href={Resume} target="_blank" rel="Resume.pdf" className="btnResume">My Resume</a>
+
+                <div className="resume">
+                    <a href={Resume} target="_blank" rel="Resume.pdf" className="btnResume">My Resume</a>
+                </div>
             </div>
          </section>
     );
