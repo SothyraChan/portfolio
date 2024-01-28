@@ -8,7 +8,7 @@ const Intro = () => {
     return (
         <section id="intro">
             <div className="introContent">
-                <span className="hello">Hello,</span>
+                <span className="hello">Welcome,</span>
                 <span className="introText">I'm <span className="introName">Sothyra</span> <br/>Software Developer</span>
                 <p className='introPara'>I am an enthusiatic web developer with the desire to showcase my creativity <br/>  by making appealing websites.</p>
                 <Link><button className="btn"><img src={btnImg} alt="Hire Me" className="btnImg" />Hire Me</button></Link>
