@@ -5,8 +5,9 @@ import Intro from './components/Intro/intro';
 function App() {
   return (
     <div className="App">
-        <Navbar/>
-        <Intro/>
+        <Navbar />
+        <Intro />
+        <Skills />
     </div>
   );
 }
