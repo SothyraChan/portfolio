@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './contact.css';
 import FrontendImg from '../../assets/frontend.png';
 import BackendImg from '../../assets/backend.png';
