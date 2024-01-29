@@ -22,7 +22,7 @@ const Navbar = () => {
         }>
                 <img src={contactImg} alt="" className="desktopMenuImg" />Contact Me</buttom>
 
-            <img src="menuIcon.png" alt="Menu" className='mobileMenu' style={{width: '60px', height: 'auto'}} onClick={() =>setShowMenu(!showMenu)}/>
+            <img src={menuIcon} alt="Menu" className='mobileMenu' style={{width: '60px', height: 'auto'}} onClick={() =>setShowMenu(!showMenu)}/>
             <div className="navMenu" style={{display: showMenu? 'flex':'none'}}>
                 <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className="listItem"   onClick={() =>setShowMenu(false)}>Home</Link>
                 <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-100} duration={500} className="listItem"  onClick={() =>setShowMenu(false)}>About</Link>
