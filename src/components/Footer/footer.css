@@ -1,0 +1,12 @@
+.footer {
+    width: 100vw;  
+    max-width: 75rem; 
+    height: 4rem;
+    margin: 0 auto;
+    background: #b19888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: small;
+}

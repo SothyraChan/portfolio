@@ -44,6 +44,9 @@
     display: block;
     margin-bottom: 30px;
 }
+#contact {
+    margin-top: 6rem;
+}
 
 .contactDesc {
     padding: 1rem;
@@ -84,6 +87,7 @@
 .links {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 4rem;
 }
 
 .link {

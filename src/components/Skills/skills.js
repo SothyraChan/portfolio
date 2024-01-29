@@ -9,7 +9,7 @@ import Resume from '../../assets/Resume.pdf';
 const Skills = () => {
     return (
         <section id='skills'>
-            <span className="skillTitle">My Skillsets</span>   
+            <span className="skillTitle">About Me</span>   
             <span className="skillDesc">I am passionate in learning and exposing my creativity thought creating interactive GUI and web designs. I am proficient in HTML, CSS, and Javascript.</span>
             <div className="skillBars">
                 <div className="skillBar">
