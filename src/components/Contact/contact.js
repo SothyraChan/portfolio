@@ -8,8 +8,22 @@ import fbIcon from '../../assets/facebook.png';
 import igIcon from '../../assets/instagram.png';
 import twitterIcon from '../../assets/twitter.png';
 import youtubeIcon from '../../assets/youtube.png';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const form = useRef;
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_ofiqhpo', 'template_rzjtnei', form.current, 'HCbdhjWpGzyauhJkftWBe')
+          .then((result) => {
+              console.log(result.text);
+              e.target.reset();
+              alert('Email Sent !');
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
     return (
         <section id="contactPage">
             <div id="services">
@@ -39,11 +53,11 @@ const Contact = () => {
             <div id="contact">
                 <h1 className="servicePageTitle">Contact Me</h1>
                 <span className="contactDesc">Please fill out your details in the email form below for discussing work opportunity.</span>
-                    <form className="contactForm">
-                        <input type="text" className="firstName" placeholder='First name' />
-                        <input type="text" className="lastName" placeholder='Last name' />
-                        <input type="tel" className="phoneNum" placeholder='Phone number' />
-                        <input type="email" className="email" placeholder='Email address' />
+                    <form className="contactForm" ref={form} onSubmit={sendEmail}>
+                        <input type="text" className="firstName" placeholder='First name' name='your_name'/>
+                        <input type="text" className="lastName" placeholder='Last name' name='your_name'/>
+                        <input type="tel" className="phoneNum" placeholder='Phone number' name='your_tel'/>
+                        <input type="email" className="email" placeholder='Email address' name='your_email'/>
                         <textarea  className="message" name="message" rows="5" placeholder='Addition message' />
                         <button type='submit' value='send' className="submitBtn">Submit</button>
                         <div className="links">
