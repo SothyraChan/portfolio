@@ -1,3 +1,4 @@
+// File: App.js, Student's name: Sothyra Chan, ID: 301289779, Date: 28 01 2024
 import Navbar from "./components/NavBar/navbar";
 import Intro from './components/Intro/intro';
 import Skills from "./components/Skills/skills";

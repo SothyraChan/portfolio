@@ -1,3 +1,5 @@
+/* File: contact.css, Student's name: Sothyra Chan, ID: 301289779, Date: 28 01 2024 */
+
 #contactPage {
     min-height: calc(100vh - 4rem);
     width: 100vw;
@@ -64,7 +66,7 @@
     max-width: 60rem;
 }
 
-.firstName, .lastName, .phoneNum, .email, .message {
+.firstName, .lastName, .phoneNum, .email, .msg {
     font-size: medium;
     width: 100%;
     max-width: 40rem;

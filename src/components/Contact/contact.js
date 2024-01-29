@@ -1,3 +1,5 @@
+// File: contact.js, Student's name: Sothyra Chan, ID: 301289779, Date: 28 01 2024
+
 import React, { useRef } from 'react';
 import './contact.css';
 import FrontendImg from '../../assets/frontend.png';
@@ -9,6 +11,7 @@ import igIcon from '../../assets/instagram.png';
 import twitterIcon from '../../assets/twitter.png';
 import youtubeIcon from '../../assets/youtube.png';
 import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
     const form = useRef();
@@ -59,7 +62,7 @@ const Contact = () => {
                         <input type="text" className="lastName" placeholder='Last name' name='your_name'/>
                         <input type="tel" className="phoneNum" placeholder='Phone number' name='your_tel'/>
                         <input type="email" className="email" placeholder='Email address' name='your_email'/>
-                        <textarea  className="message" name="message" rows="5" placeholder='Addition message' />
+                        <textarea  className="msg" name="message" rows="5" placeholder='Addition message' ></textarea>
                         <button type='submit' value='send' className="submitBtn">Submit</button>
                         <div className="links">
                             <img src={fbIcon} alt="Facebook" className="link" style={{width: '40px', height: 'auto'}}/>
