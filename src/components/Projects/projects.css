@@ -14,14 +14,49 @@
 .projectsTitle {
     margin: 1rem 0;
     font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 .projectsDesc {
     font-weight: 300;
     font-size: 1rem;
+    max-width: 45rem;
+    margin-bottom: 40px;
 }
 
 .projectsImgs {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 65rem;
+    margin: 0.5rem;
+    padding: 2px;
 }
 
+.projectContainer {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.projectsImg {
+    object-fit: cover;
+    height: 20rem;
+    margin: 0.5rem;
+    border-radius: 2%;
+    border: 0.9px solid black;
+}
+
+.projectsImgsText {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 30px;
+    /* margin-top: 30px; */
+}
+
+@media screen and (max-width:585px) {
+    .projectsImg {
+        height: 48vw;
+    }
+}
