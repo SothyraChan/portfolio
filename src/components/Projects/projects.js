@@ -7,7 +7,7 @@ import Project3 from '../../assets/project3.png';
 const Projects = () => {
     return (
         <section id='projects'>
-           <h2 className="projectsTitle">My Projects</h2>
+           <h2 className="projectsTitle">Projects</h2>
            <span className="projectsDesc">I always pay attention to the smallest information for all the individual projects that I have learnt to make personally as well as during in class sessions.<br/>Here are some of my favorite projects captured in images, which I believe have augmented my ability to think outside the box and to code.</span>
            <div className="projectsImgs">
                 <div className="projectContainer">
