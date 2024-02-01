@@ -14,21 +14,21 @@ const Navbar = () => {
             <div className="desktopMenu">
                 <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Home</Link>
                 <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">About</Link>
-                <Link activeClass='active' to='projects' spy={true} smooth={true} offset={-120} duration={500} className="desktopMenuListItem">Project</Link>
-                <Link activeClass='active' to='services' spy={true} smooth={true} offset={-120} duration={500} className="desktopMenuListItem">Service</Link>
+                <Link activeClass='active' to='projects' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Project</Link>
+                <Link activeClass='active' to='services' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Service</Link>
             </div>
-            <buttom className="desktopMenuBtn" onclick={() => {
+            <button className="desktopMenuBtn" onclick={() => {
                 document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
             }
         }>
-                <img src={contactImg} alt="" className="desktopMenuImg" />Contact Me</buttom>
+                <img src={contactImg} alt="" className="desktopMenuImg" />Contact Me</button>
 
             <img src={menuIcon} alt="Menu" className='mobileMenu' style={{width: '60px', height: 'auto'}} onClick={() =>setShowMenu(!showMenu)}/>
             <div className="navMenu" style={{display: showMenu? 'flex':'none'}}>
                 <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className="listItem"   onClick={() =>setShowMenu(false)}>Home</Link>
                 <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-100} duration={500} className="listItem"  onClick={() =>setShowMenu(false)}>About</Link>
                 <Link activeClass='active' to='projects' spy={true} smooth={true} offset={-100} duration={500} className="listItem"onClick={() =>setShowMenu(false)}>Project</Link>
-                <Link activeClass='active' to='services' spy={true} smooth={true} offset={-120} duration={500} className="listItem"onClick={() =>setShowMenu(false)}>Service</Link>
+                <Link activeClass='active' to='services' spy={true} smooth={true} offset={-100} duration={500} className="listItem"onClick={() =>setShowMenu(false)}>Service</Link>
                 <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={() =>setShowMenu(false)}>Contact</Link>
             </div>
         </nav>
