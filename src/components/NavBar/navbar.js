@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import './navbar.css';
-// import logo from '../../assets/logo.png';
 import {Link} from 'react-scroll';
 import contactImg from '../../assets/contact.png';
 import menuIcon from '../../assets/menu.png';

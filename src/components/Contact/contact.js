@@ -15,19 +15,16 @@ import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const form = useRef();
-
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_ofiqhpo', 'template_rzjtnei', form.current, 'HCbdhjWpGzyauhJkftWBe')
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
           .then((result) => {
               console.log(result.text);
-              e.target.reset();
-              alert('Email Sent !');
           }, (error) => {
               console.log(error.text);
           });
-      };
+      };    
     return (
         <section id="contactPage">
             <div id="services">
