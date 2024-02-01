@@ -1,4 +1,4 @@
-//File: NavBar.css, Student's name: Sothyra Chan, ID: 301289779, Date: 28 01 2024
+//File: projects.js, Student's name: Sothyra Chan, ID: 301289779, Date: 28 01 2024
 import React from 'react';
 import './projects.css';
 import Project1 from '../../assets/project1.png';

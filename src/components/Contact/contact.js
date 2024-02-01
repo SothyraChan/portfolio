@@ -17,12 +17,11 @@ const Contact = () => {
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-    
-        emailjs.sendForm('service_ofiqhpo', 'template_rzjtnei', form.current, 'HCbdhjWpGzyauhJkftWBe')
+        emailjs.sendForm('service_ofiqhpo', 'template_rzjtnei', form.current, 'mLPukJt8AAc6tN0VK')
           .then((result) => {
               console.log(result.text);
               e.target.reset();
-              alert('Email sent!');
+              alert('Email Successfully Sent!');
           }, (error) => {
               console.log(error.text);
           });
@@ -57,12 +56,12 @@ const Contact = () => {
                 <h1 className="servicePageTitle">Contact Me</h1>
                 <span className="contactDesc">Please fill out your details in the email form below for discussing work opportunity.</span>
                     <form className="contactForm" ref={form} onSubmit={sendEmail}>
-                        <input type="text" className="firstName" placeholder='First name' name="your_fname"/>
-                        <input type="text" className="lastName" placeholder='Last name' name="your_lname"/>
-                        <input type="tel" className="phoneNum" placeholder='Phone number' name="your_phone"/>
-                        <input type="email" className="email" placeholder='Email address' name="your_email"/>
-                        <textarea  className="msg" name="message" rows="5" placeholder='Addition message' ></textarea>
-                        <button type="button" className="submitBtn" onClick={handleSubmit}>Submit</button>
+                        <input type="text" className="firstName" placeholder='First name' name='from_fname'/>
+                        <input type="text" className="lastName" placeholder='Last name' name='from_lname'/>
+                        <input type="tel" className="phoneNum" placeholder='Phone number' name='from_phoneNumber'/>
+                        <input type="email" className="email" placeholder='Email address' name='from_email'/>
+                        <textarea className='msg' name="message" rows="5" placeholder='Addition message'></textarea>
+                        <button type="submit" value='Send' className="submitBtn">Submit</button>
                         <div className="links">
                             <img src={fbIcon} alt="Facebook" className="link" style={{width: '40px', height: 'auto'}}/>
                             <img src={igIcon} alt="Instagram" className="link" style={{width: '40px', height: 'auto'}}/>

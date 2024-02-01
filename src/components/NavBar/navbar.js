@@ -1,4 +1,4 @@
-// File: NavBar.js, Student's name: Sothyra Chan, ID: 301289779, Date: 28 01 2024
+// File: navBar.js, Student's name: Sothyra Chan, ID: 301289779, Date: 28 01 2024
 
 import React, { useState } from 'react';
 import './navbar.css';
@@ -17,7 +17,7 @@ const Navbar = () => {
                 <Link activeClass='active' to='projects' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Project</Link>
                 <Link activeClass='active' to='services' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Service</Link>
             </div>
-            <button className="desktopMenuBtn" onclick={() => {
+            <button className="desktopMenuBtn" onClick={() => {
                 document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
             }
         }>
