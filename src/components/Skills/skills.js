@@ -38,7 +38,7 @@ const Skills = () => {
                 </div>
 
                 <div className="resume">
-                    <a href={Resume} target="_blank" rel="Resume.pdf" className="btnResume">My Resume</a>
+                    <a href={Resume} target="blank" rel="Resume.pdf" className="btnResume">My Resume</a>
                 </div>
             </div>
          </section>
@@ -46,5 +46,3 @@ const Skills = () => {
 }
 
 export default Skills;
-
-// <img src={AppDesign} alt="AppDesign" className="skillBarImg" style:{{width: '100px', hieght: 'auto'}} />
